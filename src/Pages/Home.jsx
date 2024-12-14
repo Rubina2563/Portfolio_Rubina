@@ -34,7 +34,7 @@ const Home = () => {
        <section id="projects" className="mt-20">
         <Projects />
       </section>
-      <CV />
+    {/* //  <CV /> */}
        <section id="contact" className="mt-20">
         <Contact />
       </section>
