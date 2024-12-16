@@ -38,49 +38,53 @@ const HeroSection = () => {
   }, [currentWordIndex, currentLine, lines]);
 
   return (
-    <section className="h-screen flex flex-col md:flex-row items-center justify-between p-10 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
+    <section className="h-screen flex flex-col-reverse md:flex-row items-center justify-between p-10 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
       {/* Left Part - Animated Lines and Buttons */}
-      <div className="flex-1 text-white space-y-5">
-        <div className="text-4xl font-bold">
-          {/* Render each word separately */}
-          {showLine.map((word, index) => (
-            <span key={index} className="inline-block animate-word mx-1">
-              {word}
-            </span>
-          ))}
-        </div>
-        <div className="flex items-center space-x-5 mt-5">
-         <button
-  className="bg-white text-purple-500 px-6 py-2 rounded-full font-semibold shadow-lg hover:shadow-2xl transition transform hover:scale-105"
-  onClick={() => {
-    const link = document.createElement('a');
-    link.href = '/uploads/Rubina-Tazak-FlowCV-Resume-20240831.pdf'; // Path to your CV file
-    link.download = 'Rubina-Tazak-FlowCV-Resume.pdf'; // The name of the downloaded file
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }}
->
-  Download CV
-</button>
-          <a
-            href="https://linkedin.com" // Replace with your LinkedIn link
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-2xl text-white hover:text-blue-500"
-          >
-            <FaLinkedin />
-          </a>
-          <a
-            href="https://github.com" // Replace with your GitHub link
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-2xl text-white hover:text-gray-800"
-          >
-            <FaGithub />
-          </a>
-        </div>
-      </div>
+   <div className="flex-1 text-white space-y-5">
+  {/* Writing Animation */}
+  <div className="text-3xl font-bold min-h-[4rem]">
+    {/* Render each word separately */}
+    {showLine.map((word, index) => (
+      <span key={index} className="inline-block animate-word mx-1">
+        {word}
+      </span>
+    ))}
+  </div>
+
+  {/* Buttons and Links */}
+  <div className="flex items-center space-x-5 mt-5 fixed lg:static bottom-5 left-5 lg:bottom-auto lg:left-auto">
+    <button
+      className="bg-white text-purple-500 px-6 py-2 rounded-full font-semibold shadow-lg hover:shadow-2xl transition transform hover:scale-105"
+      onClick={() => {
+        const link = document.createElement('a');
+        link.href = '/uploads/Rubina-Tazak-FlowCV-Resume-20240831.pdf'; // Path to your CV file
+        link.download = 'Rubina-Tazak-FlowCV-Resume.pdf'; // The name of the downloaded file
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }}
+    >
+      Download CV
+    </button>
+    <a
+      href="https://linkedin.com" // Replace with your LinkedIn link
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-2xl text-white hover:text-blue-500"
+    >
+      <FaLinkedin />
+    </a>
+    <a
+      href="https://github.com" // Replace with your GitHub link
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-2xl text-white hover:text-gray-800"
+    >
+      <FaGithub />
+    </a>
+  </div>
+</div>
+
 
       {/* Right Part - Lottie Animation */}
       <div className="flex-1 flex justify-center items-center">
