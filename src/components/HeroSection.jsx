@@ -56,7 +56,7 @@ const HeroSection = () => {
       Download CV
     </button>
     <a
-      href="https://linkedin.com" // Replace with your LinkedIn link
+      href="https://linkedin.com/in/rubina-tazak-642100216" // Replace with your LinkedIn link
       target="_blank"
       rel="noopener noreferrer"
       className="text-2xl text-white hover:text-blue-500"
@@ -64,7 +64,7 @@ const HeroSection = () => {
       <FaLinkedin />
     </a>
     <a
-      href="https://github.com" // Replace with your GitHub link
+      href="https://github.com/Rubina2563/" // Replace with your GitHub link
       target="_blank"
       rel="noopener noreferrer"
       className="text-2xl text-white hover:text-gray-800"

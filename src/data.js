@@ -32,28 +32,22 @@ export const projects = [
     description: "A E-Commerce MERN app.",
     screenshot: "/uploads/ShopPlusPlus.png", // Replace with your actual screenshot URL
     live_url: "https://up-grad-project-front.vercel.app/", // Replace with the actual live demo URL
-    github_url: "https://github.com/yourusername/project1", // Replace with your GitHub repository URL
+    github_url: "https://github.com/Rubina2563/UpGradProject", // Replace with your GitHub repository URL
   },
   {
-    name: "ShopPlusPlus",
-    description: "A E-Commerce MERN app.",
-    screenshot: "/uploads/ShopPlusPlus.png", // Replace with your actual screenshot URL
-    live_url: "https://up-grad-project-front.vercel.app/", // Replace with the actual live demo URL
-    github_url: "https://github.com/yourusername/project1", // Replace with your GitHub repository URL
+    name: "Employee Task Management App",
+    description: "A react app for managing your employees and their task.",
+    screenshot: "/uploads/task.png", // Replace with your actual screenshot URL
+    live_url: "https://react-task-management-app-eosin.vercel.app/", // Replace with the actual live demo URL
+    github_url: "https://github.com/Rubina2563/react-taskManagementApp/", // Replace with your GitHub repository URL
   },
   {
-    name: "ShopPlusPlus",
-    description: "A E-Commerce MERN app.",
-    screenshot: "/uploads/ShopPlusPlus.png", // Replace with your actual screenshot URL
-    live_url: "https://up-grad-project-front.vercel.app/", // Replace with the actual live demo URL
-    github_url: "https://github.com/yourusername/project1", // Replace with your GitHub repository URL
+    name: "PDF Editor",
+    description: "App which edit PDF and save new pdf.",
+    screenshot: "/uploads/pdfEditor.png", // Replace with your actual screenshot URL
+    live_url: "https://react-pdf-editor-ztsw.vercel.app/", // Replace with the actual live demo URL
+    github_url: "https://github.com/Rubina2563/ReactPDFEditor", // Replace with your GitHub repository URL
   },
-  {
-    name: "ShopPlusPlus",
-    description: "A E-Commerce MERN app.",
-    screenshot: "/uploads/ShopPlusPlus.png", // Replace with your actual screenshot URL
-    live_url: "https://up-grad-project-front.vercel.app/", // Replace with the actual live demo URL
-    github_url: "https://github.com/yourusername/project1", // Replace with your GitHub repository URL
-  },
+
   // Add more projects as needed
 ];
