@@ -40,7 +40,7 @@ const Navbar = () => {
           </button>
           {/* Desktop Menu */}
           <ul className="hidden md:flex items-center space-x-4">
-            {['Home', 'Achievements', 'Projects', 'CV', 'Contact'].map((section) => (
+            {['Home', 'Achievements', 'Projects', 'CV', 'Contact Me'].map((section) => (
               <li
                 key={section}
                 className="nav-item transform transition-transform duration-500 flex items-center"
@@ -81,7 +81,7 @@ const Navbar = () => {
             ✖
           </button>
           <ul className="flex flex-col items-start space-y-4 mt-12 ml-6">
-            {['Home', 'Achievements', 'Projects', 'CV', 'Contact'].map((section) => (
+            {['Home', 'Achievements', 'Projects', 'CV', 'Contact Me'].map((section) => (
               <li key={section} className="nav-item">
                 {section === 'CV' ? (
                   <button

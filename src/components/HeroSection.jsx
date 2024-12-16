@@ -40,19 +40,8 @@ const HeroSection = () => {
   return (
     <section className="h-screen flex flex-col-reverse md:flex-row items-center justify-between p-10 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
       {/* Left Part - Animated Lines and Buttons */}
-   <div className="flex-1 text-white space-y-5">
-  {/* Writing Animation */}
-  <div className="text-3xl font-bold min-h-[4rem]">
-    {/* Render each word separately */}
-    {showLine.map((word, index) => (
-      <span key={index} className="inline-block animate-word mx-1">
-        {word}
-      </span>
-    ))}
-  </div>
-
-  {/* Buttons and Links */}
-  <div className="flex items-center space-x-5 mt-5 fixed lg:static bottom-5 left-5 lg:bottom-auto lg:left-auto">
+      <div className='flex flex-col md:w-1/2 gap-3 flex-col-reverse'>
+       <div className="flex items-center relative space-x-5 mt-5  bottom-5 left-0 lg:static lg:bottom-auto">
     <button
       className="bg-white text-purple-500 px-6 py-2 rounded-full font-semibold shadow-lg hover:shadow-2xl transition transform hover:scale-105"
       onClick={() => {
@@ -82,8 +71,24 @@ const HeroSection = () => {
     >
       <FaGithub />
     </a>
+          </div>
+      <div className="flex-1 text-white space-y-5">
+        
+  {/* Writing Animation */}
+  <div className="text-3xl font-bold min-h-[4rem]">
+    {/* Render each word separately */}
+    {showLine.map((word, index) => (
+      <span key={index} className="inline-block animate-word mx-1">
+        {word}
+      </span>
+    ))}
   </div>
-</div>
+
+  {/* Buttons and Links */}
+ 
+          
+</div></div>
+
 
 
       {/* Right Part - Lottie Animation */}
@@ -92,7 +97,8 @@ const HeroSection = () => {
           src="https://assets7.lottiefiles.com/packages/lf20_tno6cg2w.json" // Replace with your Lottie animation URL
           background="transparent"
           speed="1"
-          style={{ width: '300px', height: '300px' }}
+           style={{width: '70%',
+    height: '70%', maxWidth: '300px', maxHeight: '300px' }} 
           loop
           autoplay
         ></dotlottie-player>

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-gray-200;
+  /* or any other gray shade */
+}
 /* Shining Text Effect */
 .shining-text {
   background: linear-gradient(90deg, #FF6B6B, #FFD93D, #FF6B6B);

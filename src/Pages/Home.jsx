@@ -28,14 +28,14 @@ const Home = () => {
       <section id="home">
         <HeroSection />
       </section>
-      <section id="achievements" className="mt-20">
+      <section id="achievements" className="mt-1">
         <Achievements />
       </section>
-       <section id="projects" className="mt-20">
+       <section id="projects" className="mt-1">
         <Projects />
       </section>
     {/* //  <CV /> */}
-       <section id="contact" className="mt-20">
+       <section id="contact" className="mt-1">
         <Contact />
       </section>
       
