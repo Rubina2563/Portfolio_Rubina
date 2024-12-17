@@ -92,7 +92,7 @@ const HeroSection = () => {
 
 
       {/* Right Part - Lottie Animation */}
-      <div className="flex-1 flex justify-center items-center mt-40 ">
+      <div className="flex-1 flex justify-center items-center mt-32 ">
         <dotlottie-player
           src="https://assets7.lottiefiles.com/packages/lf20_tno6cg2w.json" // Replace with your Lottie animation URL
           background="transparent"
